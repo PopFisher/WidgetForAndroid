@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/common_dialog_root_bg_layout_style">
+
+    <LinearLayout
+        android:id="@+id/dialog_load_root_view"
+        style="@style/common_dialog_root_layout_style"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.common.widgetforandroid.progress.CircleProgressView
+            android:id="@+id/dialog_load_progress"
+            android:layout_width="34dp"
+            android:layout_height="34dp"/>
+
+        <TextView
+            android:id="@+id/text_load_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:includeFontPadding="false"
+            android:text="正在加载..."
+            android:textColor="#FF535353"
+            android:textSize="13dp" />
+    </LinearLayout>
+</LinearLayout>

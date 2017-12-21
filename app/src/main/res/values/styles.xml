@@ -5,4 +5,38 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!-- 对话框样式 -->
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Dialog.NoAnim" parent="@style/Dialog">
+        <!-- 无动画 -->
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <!-- 对话框外层背景布局属性 -->
+    <style name="common_dialog_root_bg_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/common_dialog_bg</item>
+    </style>
+
+    <!-- 对话框外层布局属性 -->
+    <style name="common_dialog_root_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/common_dialog_bg_with_rounded_rectangle</item>
+    </style>
 </resources>
